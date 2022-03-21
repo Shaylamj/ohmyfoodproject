@@ -1,64 +1,80 @@
-html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
-#page{
-    margin: 0 auto;
-    min-width: 320px;
+
+#page {
+  margin: 0 auto;
+  min-width: 320px;
 }
-.header-container{
-    width: 100%;
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.logo{
-    width: 50%;
-    margin: 0 auto;
+.header-container .logo {
+  width: 170px;
+  height: 30px;
+  align-self: center;
+  margin: 0 auto;
 }
+
 .restaurantcontainer {
   background-color: #dbdbdb;
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  gap:15px ;
+  justify-content: center;
+  gap: 15px;
   width: 100%;
-  
 }
-
-.restaurantblock {
+.restaurantcontainer .block {
   background-color: white;
   display: flex;
   width: 90%;
   margin: 0 auto;
-  height: 220px;
-  border-radius: 25px;
+  height: 200px;
+  border-radius: 15px;
   flex-direction: column;
-
 }
-.restaurantblock--image{
-    object-fit: cover;
-    border-radius: 25px 25px 0 0;
-    height: 75%;
-    width: 100%;
-    display: block;
+.restaurantcontainer .block .block--image {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  height: 70%;
+  width: 100%;
+  display: block;
 }
-
-.restaurantblock__description {
+.restaurantcontainer .block .block__description {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
-footer{
-    width: 100%;
-    background-color: gray;
-    height: auto;
-    position: absolute;
+.restaurantcontainer .block .block__description .block__description-name {
+  margin: 0;
 }
-.footer__list--title{
-  font-family: 'shrikand';
+
+footer {
+  width: 100%;
+  background-color: gray;
+  height: auto;
+  bottom: 0;
+  position: relative;
 }
-.footer__list{
+
+.footer__list--title {
+  margin: 0;
+  font-family: "shrikand";
+}
+
+.footer__list {
+  margin: 0;
   color: white;
   list-style: none;
 }
