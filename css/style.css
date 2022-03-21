@@ -1,0 +1,66 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+#page{
+    margin: 0 auto;
+    min-width: 320px;
+}
+.header-container{
+    width: 100%;
+}
+.logo{
+    width: 50%;
+    margin: 0 auto;
+}
+.restaurantcontainer {
+  background-color: #dbdbdb;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  gap:15px ;
+  width: 100%;
+  
+}
+
+.restaurantblock {
+  background-color: white;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 220px;
+  border-radius: 25px;
+  flex-direction: column;
+
+}
+.restaurantblock--image{
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    height: 75%;
+    width: 100%;
+    display: block;
+}
+
+.restaurantblock__description {
+  display: flex;
+  flex-direction: row;
+}
+footer{
+    width: 100%;
+    background-color: gray;
+    height: auto;
+    position: absolute;
+}
+.footer__list--title{
+  font-family: 'shrikand';
+}
+.footer__list{
+  color: white;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
